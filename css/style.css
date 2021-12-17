@@ -7,22 +7,22 @@
 /*  Custom Properties */
 
 :root {
-    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-primary: 'Zen Tokyo Zoo';
     --ff-secondary: 'Source Code Pro', monospace;
 
     --fw-reg: 300;
     --fw-bold: 900;
 
-    --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #16e0bd; 
+    --clr-light: #ffffff;
+    --clr-dark: #000000;
+    --clr-accent: #ea00d9; 
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
 
-    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
+    --bs: 0.25em 0.25em 0.75em rgba(234, 0, 217, 0.534),
           0.125em 0.125em 0.25em rgba(0, 0, 0, .15); 
 }
 
@@ -43,10 +43,10 @@ html {
 }
 
 body {
-    background: var(--clr-light);
-    color: var(--clr-dark);
+    background: var(--clr-dark);
+    color: var(--clr-light);
     margin: 0;
-    font-family: var(--ff-primary);
+    font-family: var(--ff-secondary);
     font-size: var(--fs-body);
     line-height: 1.6;
 }
@@ -96,6 +96,7 @@ h2,
 h3 {
     line-height: 1.1;
     margin: 0;
+    font-family: var(--ff-secondary);
 }
 
 h1 { font-size: var(--fs-h1)}
@@ -108,6 +109,8 @@ h3 { font-size: var(--fs-h3)}
 
 .section__title--intro {
     font-weight: var(--fw-reg);
+    font-family: var(--ff-primary);
+    text-transform: uppercase;
 }
 
 .section__title--intro strong {
@@ -125,6 +128,11 @@ h3 { font-size: var(--fs-h3)}
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
+}
+
+.section__title--work{
+    font-family: var(--ff-primary);
+    text-transform: uppercase;
 }
 
 .section__subtitle--work {
@@ -301,6 +309,8 @@ header {
 .section__title--services {
     color: var(--clr-accent);
     position:relative;
+    font-family: var(--ff-primary);
+    text-transform: uppercase;
 }
 
 .section__title--services::after {
@@ -309,7 +319,7 @@ header {
     width: 2em;
     height: 1px;
     margin: 0.5em auto 1em;
-    background: var(--clr-light);
+    background: var(--clr-accent);
     opacity: 0.25;
 }
 
@@ -358,6 +368,8 @@ header {
 
      .section__title--about {
          grid-area: title;
+         font-family: var(--ff-primary);
+         text-transform: uppercase;
      }
 
      .section__subtitle--about {
@@ -417,7 +429,7 @@ header {
 /* Footer */
 
 .footer {
-    background: #111;
+    background: var(--clr-dark);
     color: var(--clr-accent);
     text-align: center;
     padding: 2.5em 0;
